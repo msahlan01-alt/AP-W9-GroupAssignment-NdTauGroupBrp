@@ -5,7 +5,7 @@ OOO Driver Transformation Simulator (Kamen Rider OOO Medal Scanner)
 
 **👥 Group Members**  
 [Muh. Sahlan Rahman](https://github.com/msahlan01-alt)ㅤㅤㅤㅤ- 2086022510038<br>
-[Jason Silvester Djaya](https://github.com/Sonnn03)ㅤㅤ ㅤㅤ- (nim)<br>
+[Jason Silvester Djaya](https://github.com/Sonnn03)ㅤㅤ ㅤㅤ- 2086022510027<br>
 [Christiano Waliliong](https://github.com/Chr1st1an0-UC) ㅤ ㅤㅤㅤ- (nim)<br>
 [Intan Adhara Tangkelangi](https://github.com/Intan-afk)ㅤㅤ - (nim)
 
