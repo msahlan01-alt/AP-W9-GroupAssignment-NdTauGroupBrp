@@ -190,13 +190,19 @@ src/
 ## ▶️ How to Run
 
 ### Build Project
+```bash
 ./gradlew build
+```
 
 ### Run Application
+```bash
 ./gradlew run
+```
 
 ### Run Tests
+```bash
 ./gradlew test
+```
 
 ---
 
