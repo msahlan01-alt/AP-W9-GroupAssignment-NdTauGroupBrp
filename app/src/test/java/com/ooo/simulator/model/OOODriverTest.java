@@ -22,7 +22,7 @@
         private CoreMedal battaLegs;
 
         @BeforeEach
-        void setUp() {
+        public void setUp() {
             driver = new OOODriver();
             takaHead = new CoreMedal("Taka Head", Tier.I, MedalType.HEAD, "Taka", 10, "Taka.wav");
             toraArms = new CoreMedal("Tora Arms", Tier.II, MedalType.ARMS, "Tora", 15, "Tora.wav");
