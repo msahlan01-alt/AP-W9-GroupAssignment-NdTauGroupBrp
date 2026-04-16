@@ -10,7 +10,7 @@ import com.ooo.simulator.model.Storage.Storage;
 
 public class OScanner {
     private boolean active;
-    private int lastScanHash;
+    private final int lastScanHash;
     private int scanCount;
 
     public OScanner() {
@@ -79,4 +79,8 @@ public class OScanner {
     public void setActive(boolean active) { this.active = active; }
     public int getScanCount() { return scanCount; }
     public void incrementScanCount() { scanCount++; }
+
+    public int getLastScanHash() {
+        return lastScanHash;
+    }
 }

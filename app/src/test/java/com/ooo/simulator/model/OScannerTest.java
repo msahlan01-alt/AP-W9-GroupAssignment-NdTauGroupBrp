@@ -1,5 +1,15 @@
 package com.ooo.simulator.model;
 
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import com.ooo.simulator.model.Driver.OOODriver;
 import com.ooo.simulator.model.Driver.OScanner;
 import com.ooo.simulator.model.Engine.TransformationResult;
@@ -8,12 +18,6 @@ import com.ooo.simulator.model.Model.CoreMedal;
 import com.ooo.simulator.model.Model.MedalType;
 import com.ooo.simulator.model.Model.Tier;
 import com.ooo.simulator.model.Storage.Storage;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class OScannerTest {
     private OScanner scanner;
@@ -22,7 +26,7 @@ class OScannerTest {
     private CoreMedal taka, tora, batta;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         scanner = new OScanner();
         driver = new OOODriver();
         storage = new Storage();
