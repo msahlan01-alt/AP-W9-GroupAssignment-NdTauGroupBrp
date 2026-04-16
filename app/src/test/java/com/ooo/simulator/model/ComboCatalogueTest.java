@@ -1,19 +1,21 @@
 package com.ooo.simulator.model;
 
-import com.ooo.simulator.model.Engine.ComboCatalogue;
-import com.ooo.simulator.model.Model.ComboRule;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Optional;
-
-import static org.junit.jupiter.api.Assertions.*;
+import com.ooo.simulator.model.Engine.ComboCatalogue;
+import com.ooo.simulator.model.Model.ComboRule;
 
 class ComboCatalogueTest {
     private ComboCatalogue catalogue;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         catalogue = new ComboCatalogue();
     }
 
