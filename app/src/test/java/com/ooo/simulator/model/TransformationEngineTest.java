@@ -35,7 +35,7 @@ class TransformationEngineTest {
     private CoreMedal cobra, kame, wani;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         driver = new OOODriver();
         engine = new TransformationEngine();
 

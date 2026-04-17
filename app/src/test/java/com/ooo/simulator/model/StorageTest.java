@@ -1,20 +1,21 @@
 package com.ooo.simulator.model;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 import com.ooo.simulator.model.Model.CoreMedal;
 import com.ooo.simulator.model.Model.MedalType;
 import com.ooo.simulator.model.Model.Tier;
 import com.ooo.simulator.model.Storage.Storage;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class StorageTest {
     private Storage storage;
     private CoreMedal medal1, medal2;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         storage = new Storage();
         medal1 = new CoreMedal("Taka", Tier.I, MedalType.HEAD, "Taka", 10, "Taka.wav");
         medal2 = new CoreMedal("Tora", Tier.II, MedalType.ARMS, "Tora", 15, "Tora.wav");

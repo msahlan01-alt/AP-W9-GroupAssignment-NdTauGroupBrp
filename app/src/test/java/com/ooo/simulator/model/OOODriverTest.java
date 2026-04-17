@@ -37,18 +37,20 @@
 
         @Test
         void testInsertMedalIntoWrongSlotThrowsException() {
-            assertThrows(InvalidSlotException.class, () -> {
+            Throwable exception = assertThrows(InvalidSlotException.class, () -> {
                 driver.insertMedal(takaHead, MedalType.ARMS);
             });
+            assertFalse(exception.getMessage().isEmpty());
         }
 
         @Test
         void testInsertMedalIntoOccupiedSlotThrowsException() {
             driver.insertMedal(takaHead, MedalType.HEAD);
             CoreMedal anotherHead = new CoreMedal("Lion Head", Tier.II, MedalType.HEAD, "Lion", 15, "Lion.wav");
-            assertThrows(SlotOccupiedException.class, () -> {
+            Throwable exception = assertThrows(SlotOccupiedException.class, () -> {
                 driver.insertMedal(anotherHead, MedalType.HEAD);
             });
+            assertFalse(exception.getMessage().isEmpty());
         }
 
         @Test

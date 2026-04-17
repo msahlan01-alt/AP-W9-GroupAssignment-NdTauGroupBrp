@@ -38,7 +38,8 @@ class OScannerTest {
     @Test
     void testScanDriverThrowsWhenNotFull() {
         driver.insertMedal(taka, MedalType.HEAD);
-        assertThrows(ScanNotReadyException.class, () -> scanner.scanDriver(driver));
+        Throwable exception = assertThrows(ScanNotReadyException.class, () -> scanner.scanDriver(driver));
+        assertFalse(exception.getMessage().isEmpty());
     }
 
     @Test
@@ -100,6 +101,7 @@ class OScannerTest {
         driver.insertMedal(taka, MedalType.HEAD);
         driver.insertMedal(tora, MedalType.ARMS);
         driver.insertMedal(batta, MedalType.LEGS);
-        assertThrows(ScanNotReadyException.class, () -> scanner.scanDriver(driver));
+        Throwable exception = assertThrows(ScanNotReadyException.class, () -> scanner.scanDriver(driver));
+        assertFalse(exception.getMessage().isEmpty());
     }
 }
